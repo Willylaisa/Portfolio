@@ -8,22 +8,22 @@
     <title>Willy Laisa</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header class="sticky top-0 bg-emerald-500 font-serif text-xl text-white p-2 px-5 flex flex-row justify-between">
-        <h1 class="font-semibold text-2xl"><a href="./index.html">🦅  Willy Laisa</a></h1>
+<body class="bg-orange-50 dark:bg-black">
+    <header class="sticky top-0 bg-emerald-500 dark:bg-emerald-950 font-serif text:base md:text-xl text-white p-2 md:px-5 flex flex-row justify-between">
+        <h1 class="font-semibold text-xl md:text-2xl"><a href="./index.html">🦅  Willy Laisa</a></h1>
         <nav>
-            <ul class="flex flex-row space-x-8">
+            <ul class="flex flex-row md:space-x-8">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#" class="hidden md:block">Home</a>
                 </li>
                 <li>
-                    <a href="./about.html">About Me</a>
+                    <a href="./about.html" class="hidden md:block">About Me</a>
                 </li>
                 <li>
                     <a href="./projects.html">My Projects</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact" class="hidden md:block">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -31,40 +31,39 @@
     </header>
 
     <main>
-        <section class="min-h-screen px-6 grid grid-flow-row grid-cols-2 " 
+        <section class="min-h-screen px-6 grid grid-flow-row grid-cols-1 justify-center md:justify-normal md:grid-flow-row md:grid-cols-2 md:gap-7" 
         style="background-image: url('./img/eagle-header.jpg');
-        position:relative; 
         background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: absolute; 
+        background-repeat: no-repeat; 
         background-size: cover;  
         z-index:-1;">
-            <article class="grid place-content-center">
+            <article class="pt-3 md:pt-0 md:grid md:place-content-center">
                 <img src="./img/Mediumshot.png" alt="Willy Laisa" title="Willy Laisa" width=450vw class="border border-none rounded-3xl">
+                <br>
             </article>
 
-            <article class="flex flex-col justify-center">
-                <div>
-                    <p class="text-4xl font-normal font-serif text-white">Hello, I am</p>
-                    <h2 class="text-8xl font-extrabold text-white pb-3"><strong>Willy Laisa</strong>,</h2>
-                    <p class="text-5xl font-serif text-white">a Full Stack Web Developer</p>
+            <article class="flex flex-col justify-center pb-4 md:pb-0">
+                <div class="bg-black/80 border-0 rounded-3xl p-3">
+                    <p class="text-2xl md:text-4xl font-normal font-serif text-white">Hello, I am</p>
+                    <h2 class="text-4xl md:text-8xl font-extrabold text-white pb-3"><strong>Willy Laisa</strong>,</h2>
+                    <p class="text-3xl md:text-5xl font-serif text-white">a Full Stack Web Developer</p>
                 </div>
-                <br><br><br>
+                <br>
                 <div class="flex flex-row flex-nowrap space-x-4">
-                    <p class="border-2 border-solid border-emerald-500 bg-emerald-700 text-2xl font-bold text-white px-3 pb-1 rounded-2xl">
+                    <div class="border border-solid bg-gray-700/80 text-base md:text-2xl md:font-bold text-white px-2 md:px-3 pb-1 rounded-xl md:rounded-2xl">
                         <a href="#contact">Contact me</a>
-                    </p>
-                    <p class="text-2xl font-bold font-serif text-white">
+                    </div>
+                    <div class="border border-solid bg-gray-700/80 text-base md:text-2xl md:font-bold text-white px-2 md:px-3 pb-1 rounded-xl md:rounded-2xl">
                         <a href="./about.html">Learn more about me</a>
-                    </p>
+                    </div>
                 </div>
             </article>
         </section>
 
         <br><hr><br>
 
-        <section class="grid grid-flow-row grid-cols-2 space-x-8" style="min-height: 55vh;">
-            <article class="text-zinc-800 pl-5">
+        <section class="grid grid-flow-row grid-cols-1 md:grid-cols-2 space-x-8" style="min-height: 55vh;">
+            <article class="text-zinc-800 dark:text-slate-50 pl-5">
                 <h2 class="text-2xl">Who is a full stack web developer?</h2>
                 <p c>
                     According to <a href="https://www.coursera.org/articles/full-stack-developer" target="_blank" class="text-blue-600 visited:text-purple-600">coursera.org</a>, a full stack web developer is a developer or engineer who can build both the <a href="#frontend" class="text-blue-600 visited:text-purple-600">front end</a> and the <a href="#backend" class="text-blue-600 visited:text-purple-600">back end</a> of a website.
@@ -96,7 +95,7 @@
 
                 <aside>
                     <details>
-                        <summary class="text-emerald-500 cursor-pointer">
+                        <summary class="text-emerald-500 dark:text-emerald-600 cursor-pointer">
                             What is the difference between a web developer and a full stack web developer?
                         </summary>
                         <p>
@@ -104,7 +103,7 @@
                         </p>                        
                     </details>
                     <details>
-                        <summary class="text-emerald-500 cursor-pointer">
+                        <summary class="text-emerald-500 dark:text-emerald-600 cursor-pointer">
                             What are the skills required for one to become a full stack web developer?
                         </summary>
                         <p>
@@ -112,7 +111,7 @@
                         </p>                        
                     </details>
                     <details id="frontend">
-                        <summary class="text-emerald-500 cursor-pointer">
+                        <summary class="text-emerald-500 dark:text-emerald-600 cursor-pointer">
                             What is front end web development?
                         </summary>
                         <p>
@@ -123,7 +122,7 @@
                         </p>                        
                     </details>
                     <details id="backend">
-                        <summary class="text-emerald-500 cursor-pointer">
+                        <summary class="text-emerald-500 dark:text-emerald-600 cursor-pointer">
                             What is back end web development?
                         </summary>
                         <p>
@@ -136,7 +135,7 @@
                 </aside>
             </article>
 
-            <article class="grid justify-center items-start">
+            <article class="md:grid md:justify-center md:items-start">
                 <figure>
                     <img src="./img/web-developer2.jpg" alt="A web developer in action" title="A web developer using programming languages to create a website" loading="lazy" width=300vw>
                 </figure>
@@ -150,33 +149,50 @@
     
     
 
-    <footer id="contact" class="bg-emerald-500 text-white p-2">
+    <footer id="contact" class="bg-emerald-500 dark:bg-emerald-950 text-white p-2">
         <section>
-            <h2 class="text-zinc-800 font-serif text-8xl block p-7">Contact Me</h2>
+            <h2 class="text-white font-serif text-6xl md:text-8xl block p-3 md:p-7">Contact Me</h2>
         </section>
-        <br><br><hr><br><br>
-        <section class="flex flex-row nowrap justify-around p-0">
-            <p class="bg-white w-40 h-40 border-4 font-serif text-4xl text-emerald-500 rounded-full grid place-content-center py-0">
+        <hr><br>
+        <section class="flex flex-row nowrap justify-between md:justify-around p-0">
+            <p class="bg-white dark:bg-black w-20 md:w-40 h-20 md:h-40 border-1 font-serif text-xl md:text-4xl text-emerald-500 dark:text-slate-50 rounded-full grid place-content-center py-0">
                 Contacts
             </p>
             
-            <article>
+            <article class="grid md:grid place-content-center md:place-content-start">
                 <p>
-                    Phone: <a href="tel:+254122333444">+254122333444</a>
-                </p>
+                    Phone: <a href="tel:+2547000000000">+2547000000000</a>
+                </p>                
                 <p>
                     Email: <a href="mailto:willy@laisa.com">willy@laisa.com</a>
                 </p>
+                <br>
+                <p>Follow me and my church on:</p>
+                <p>
+                    YouTube: <a href="https://www.youtube.com/@citamngong">My church😁</a>
+                </p>
+                <p>
+                    Facebook: <a href="https://www.facebook.com/ngong.citam.org/">My Church😁</a>
+                </p>
+                <p>
+                    Instagram: <a href="https://www.instagram.com/_l.icer/">@_l.icer</a>
+                </p>
+                <p>
+                    Twitter: <a href="https://twitter.com/citam_ngong">My church😁</a>
+                </p>
+                <p>
+                    Tiktok: <a href="https://www.tiktok.com/@citamngong?_d=secCgYIASAHKAESMgowhu5AAIWpX%2B14g0KZTfeo9t6GGuC84PRfTWJNnUw8xrrKDysG9gg4bOE%2BN11etTjoGgA%3D&_r=1&language=en&sec_uid=MS4wLjABAAAAxwW5wqEVPTIEyg5MN0jSoWe-vXXN7GpIvIx0u-4ulDCt2J6E08fWWsb7QfQ_hEZ7&sec_user_id=MS4wLjABAAAAxwW5wqEVPTIEyg5MN0jSoWe-vXXN7GpIvIx0u-4ulDCt2J6E08fWWsb7QfQ_hEZ7&share_app_id=1233&share_author_id=6954702739700876289&share_link_id=d8037295-a844-48db-ac3d-364f72482279&source=h5_m&timestamp=1619675962&u_code=di83b2jl8126b6&user_id=6954702739700876289&utm_campaign=client_share&utm_medium=android&utm_source=copy">My Church😁</a>
+                </p>
             </article>
-            <address>
+            <address class="hidden md:block">
                 <p>127 Maasai Way</p>
                 <p>San Ysidro, Kajiado(34), 92173</p>
             </address>
         </section>
         
-        <p class="mt-2 flex flex-row justify-center"><a href="#">Back to top</a></p>
+        <p class="mt-2"><a href="#">Back to top</a></p>
         <hr>
-        <p class="text-white flex flex-row justify-center mt-2">
+        <p class="text-white text-sm md:text-base flex flex-row justify-center m-0 p-0">
             Copyright © Willy Laisa 2023 
         </p>
     </footer>
