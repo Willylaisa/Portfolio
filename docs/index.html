@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="flex flex-row justify-between">
-        <h1><a href="./index.html">🦅Willy Laisa</a></h1>
+    <header class="sticky top-0 bg-emerald-500 font-serif text-xl text-white p-2 px-5 flex flex-row justify-between">
+        <h1 class="font-semibold text-2xl"><a href="./index.html">🦅  Willy Laisa</a></h1>
         <nav>
-            <ul class="flex flex-row align-between">
+            <ul class="flex flex-row space-x-8">
                 <li>
                     <a href="./#">Home</a>
                 </li>
@@ -31,9 +31,9 @@
     </header>
 
     <main>
-        <section class="min-h-screen px-6 flex flex-grow-1 flex-row flex-nowrap justify-around">
-            <article>
-                <img src="./img/Mediumshot.png" alt="Willy Laisa" width="360" height="240" title="Willy Laisa">
+        <section class="min-h-screen px-6 flex flex-grow-1 flex-row flex-nowrap justify-center">
+            <article class="grid place-content-center">
+                <img src="./img/Mediumshot.png" alt="Willy Laisa" title="Willy Laisa" width="862" height="899" class="w-2/4 h-auto">
             </article>
 
             <article>
@@ -47,13 +47,13 @@
             </article>
         </section>
 
-        <hr>
+        <br><hr><br>
 
         <section class="min-h-screen flex flex-row flex-nowrap">
             <article>
                 <h2>Who is a full stack web developer?</h2>
                 <p>
-                    According to <a href="https://www.coursera.org/articles/full-stack-developer" target="_blank">coursera.org</a>, a full-stack developer is a developer or engineer who can build both the <a href="#frontend">front end</a> and the <a href="#backend">back end</a> of a website.
+                    According to <a href="https://www.coursera.org/articles/full-stack-developer" target="_blank">coursera.org</a>, a full stack web developer is a developer or engineer who can build both the <a href="#frontend">front end</a> and the <a href="#backend">back end</a> of a website.
                 </p>
 
                 <h2>What does a full stack developer do?</h2>
@@ -102,7 +102,7 @@
                             What is front end web development?
                         </summary>
                         <p>
-                            <a href="https://www.computerscience.org/bootcamps/resources/frontend-vs-backend/#:~:text=All%20websites%20require%20front%2Dend,system%2C%20data%2C%20and%20logic." target="_blank">computerscience.org</a> describes it this way; front-end development focuses on the user-facing side of a website. Front-end developers ensure that visitors can easily interact with and navigate sites by using programming languages, design skills, and other tools. They produce the drop-down menus, layouts, and designs for websites.</p>
+                            <a href="https://www.computerscience.org/bootcamps/resources/frontend-vs-backend/#:~:text=All%20websites%20require%20front%2Dend,system%2C%20data%2C%20and%20logic." target="_blank">Computerscience.org</a> describes it this way; front-end development focuses on the user-facing side of a website. Front-end developers ensure that visitors can easily interact with and navigate sites by using programming languages, design skills, and other tools. They produce the drop-down menus, layouts, and designs for websites.</p>
                         <br>
                         <p>
                             Learn more about front end web development at <a href="https://www.computerscience.org/bootcamps/resources/frontend-vs-backend/#:~:text=All%20websites%20require%20front%2Dend,system%2C%20data%2C%20and%20logic." target="_blank">computerscience.org</a>
@@ -124,39 +124,42 @@
 
             <article>
                 <figure>
-                    <img src="./img/web-developer.jpg" alt="A web developer in action" title="A web developer using programming languages to create a website" width="360" height="240" loading="lazy">
+                    <img src="./img/web-developer.jpg" alt="A web developer in action" title="A web developer using programming languages to create a website" loading="lazy">
                 </figure>
             </article>
         </section>
-
+        
+        <hr>
     </main>
     
-    <br><hr><br>
+    
 
-    <footer id="contact">
+    <footer id="contact" class="bg-emerald-500 text-white p-2">
         <section>
-            <h2>Contact Me</h2>
+            <h2 class="text-zinc-800 font-serif text-8xl block p-7">Contact Me</h2>
         </section>
-        <section>
-            <p class="w-40 h-40 border-2 border-solid border-black rounded-full grid place-content-center">
+        <br><br><hr><br><br>
+        <section class="flex flex-row nowrap justify-around p-0">
+            <p class="bg-white w-40 h-40 border-4 font-serif text-4xl text-emerald-500 rounded-full grid place-content-center py-0">
                 Contact
             </p>
             <address>
-                127 Maasai Way
-                San Ysidro, Kajiado(34), 92173
+                <p>127 Maasai Way</p>
+                <p>San Ysidro, Kajiado(34), 92173</p>
             </address>
             <article>
                 <p>
                     Phone: <a href="tel:+254122333444">+254122333444</a>
                 </p>
-                <br>
                 <p>
                     Email: <a href="mailto:willy@laisa.com">willy@laisa.com</a>
                 </p>
             </article>
         </section>
-        <p><a href="#">Back to top</a></p>
-        <p>
+        
+        <p class="mt-2 flex flex-row justify-center"><a href="#">Back to top</a></p>
+        <hr>
+        <p class="text-white flex flex-row justify-center mt-2">
             Copyright © Willy Laisa 2023 
         </p>
     </footer>

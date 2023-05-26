@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1><a href="./index.html">🦅Willy Laisa</a></h1>
+    <header class="sticky top-0 bg-emerald-500 font-serif text-xl text-white p-2 px-5 flex flex-row justify-between">
+        <h1 class="font-semibold text-2xl"><a href="./index.html">🦅  Willy Laisa</a></h1>
         <nav>
-            <ul>
+            <ul class="flex flex-row space-x-8">
                 <li>
                     <a href="./index.html">Home</a>
                 </li>
@@ -27,7 +27,7 @@
 
     </header>
 
-    <br><hr><br>
+    <br>
 
     <h1>
         My Projects
@@ -86,7 +86,7 @@
         </section>
     </main>
     
-    <br><hr><br>
+    <br>
 
     <aside>
         <details>
@@ -104,33 +104,35 @@
             </a>
         </details>
     </aside>
+     
+    <br>
 
-    <br><hr><br>
-
-    <footer id="contact">
+    <footer id="contact" class="bg-emerald-500 text-white p-2">
         <section>
-            <h2>Contact Me</h2>
+            <h2 class="text-zinc-800 font-serif text-8xl block p-7">Contact Me</h2>
         </section>
-        <section>
-            <p class="w-40 h-40 border-2 border-solid border-black rounded-full grid place-content-center">
+        <br><br><hr><br><br>
+        <section class="flex flex-row nowrap justify-around p-0">
+            <p class="bg-white w-40 h-40 border-4 font-serif text-4xl text-emerald-500 rounded-full grid place-content-center py-0">
                 Contact
             </p>
             <address>
-                127 Maasai Way
-                San Ysidro, Kajiado(34), 92173
+                <p>127 Maasai Way</p>
+                <p>San Ysidro, Kajiado(34), 92173</p>
             </address>
             <article>
                 <p>
                     Phone: <a href="tel:+254122333444">+254122333444</a>
                 </p>
-                <br>
                 <p>
                     Email: <a href="mailto:willy@laisa.com">willy@laisa.com</a>
                 </p>
             </article>
         </section>
-        <p><a href="#">Back to top</a></p>
-        <p>
+        
+        <p class="mt-2 flex flex-row justify-center"><a href="#">Back to top</a></p>
+        <hr>
+        <p class="text-white flex flex-row justify-center mt-2">
             Copyright © Willy Laisa 2023 
         </p>
     </footer>
