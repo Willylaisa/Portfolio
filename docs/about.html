@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="sticky top-0 bg-emerald-500 font-serif text-xl text-white p-2 px-5 flex flex-row justify-between">
+    <header class="sticky top-0 bg-emerald-500 font-serif text-xl text-white p-2 px-5 flex flex-row justify-between z-10">
         <h1 class="font-semibold text-2xl"><a href="./index.html">🦅  Willy Laisa</a></h1>
         <nav>
             <ul class="flex flex-row space-x-8">
@@ -27,72 +27,60 @@
 
     </header>
 
-    <br>
-
-    <h1>
-        About Me
-    </h1>
     <main>
-        <section class="min-h-screen p-6 flex flex-row flex-wrap-nowrap justify-between">
+        <h1 class="text-8xl font-extrabold text-emerald-600 p-6 flex justify-center">
+            About Me
+        </h1>
+        <section class="grid grid-flow-col grid-cols-2 gap-6 px-7 border-2 border-solid border-black bg-slate-100 rounded-3xl py-5 m-3 drop-shadow-lg">
             <article>
                 <p>
-                    First of all, I am a <a href="https://en.wikipedia.org/wiki/Generation_Z">Gen-Z</a> since I was born shortly after the dawn of the 21st Century <abbr title="Anno Domini">AD</abbr>
-                    I was born in Ngong(a big town in Kajiado North, Kajiado County, <a href="https://www.google.com/maps/place/Kenya/@0.1540843,33.4099837,6z/data=!3m1!4b1!4m6!3m5!1s0x182780d08350900f:0x403b0eb0a1976dd9!8m2!3d-0.023559!4d37.906193!16zL20vMDE5cmc1?entry=ttu" target="_blank">Kenya</a>), and have lived there ever since.
+                    First of all, I am a <a href="https://en.wikipedia.org/wiki/Generation_Z" class="text-blue-600 visited:text-purple-600">Gen-Z</a> since I was born shortly after the dawn of the 21st Century <abbr title="Anno Domini">AD</abbr>
+                    I was born in Ngong(a big town in Kajiado North, Kajiado County, <a href="https://www.google.com/maps/place/Kenya/@0.1540843,33.4099837,6z/data=!3m1!4b1!4m6!3m5!1s0x182780d08350900f:0x403b0eb0a1976dd9!8m2!3d-0.023559!4d37.906193!16zL20vMDE5cmc1?entry=ttu" target="_blank" class="text-blue-600 visited:text-purple-600">Kenya</a>), and have lived there ever since.
                 </p>
-                
-                <br><br>
-
-                <h2>What else would you like to know about my personal life?</h2>
-
-                <p>Please ask in the <a href="#talk_to_me">Talk to me</a> section below.</p>
-
-            </article>
-
-            
-            <article>
-                <h2>
-                    Education
-                </h2>
+                <br>
                 <p>
                     I studied in Excel Junior School for the first 6 years of my academic journey. I spent the first 3 years in Pre-primary School, after which I joined primary school in the same institution.
                 </p>
                 <p>
                     I later joined <abbr title="Presbyterian Church of East Africa">P.C.E.A.</abbr> Enchorro Emuny Primary School where I completed my 8 years of primary school after taking my <abbr title="Kenya Certificate of Primary Education">K.C.P.E</abbr> examination.
                 </p>
-                <img src="./img/PCEA.jpg" alt="P.C.E.A. Enchorro Emuny Primary School" title="P.C.E.A. Enchorro Emuny Primary School" width="360" height="240" loading="lazy">
+                <img src="./img/PCEA.jpg" alt="P.C.E.A. Enchorro Emuny Primary School" title="P.C.E.A. Enchorro Emuny Primary School" loading="lazy" width=400vw class="border rounded-3xl drop-shadow-lg">
 
                 <br>
+            </article>
 
+
+            <article>
                 <p>
                     I then proceeded to <em>Mang'u High School</em> where I completed my 4 years of secondary school after taking my <abbr title="Kenya Certificate of Secondary Education">K.C.S.E</abbr> examination.
                 </p>
-                <img src="./img/mang'u.jpg" alt="Mang'u High School" title="Mang'u High School" width="360" height="240" loading="lazy">
+                <img src="./img/mang'u.jpg" alt="Mang'u High School" title="Mang'u High School" loading="lazy" width=500 class="border rounded-3xl drop-shadow-lg">
 
                 <br>
 
-                <p>Learn more about the <a href="https://en.wikipedia.org/wiki/8-4-4_Curriculum_in_Kenya">8-4-4 Education Curriculum</a> in Kenya which is currently being phased out for a new curriculum, the <a href="https://www.julisha.info/hc/en-us/articles/6188243097885-Explained-Competency-based-curriculum-CBC-for-lower-primary-education-Grades-1-2-and-3-in-Kenya-#:~:text=Under%20this%20system%2C%20each%20learner's,%2C%20tertiary%2C%20and%20university%20education."><abbr title="Competency Based Curriculum">C.B.C.</abbr></a></p>
+                <p>Learn more about the <a href="https://en.wikipedia.org/wiki/8-4-4_Curriculum_in_Kenya" class="text-blue-600 visited:text-purple-600">8-4-4 Education Curriculum</a> in Kenya which is currently being phased out for a new curriculum, the <a href="https://www.julisha.info/hc/en-us/articles/6188243097885-Explained-Competency-based-curriculum-CBC-for-lower-primary-education-Grades-1-2-and-3-in-Kenya-#:~:text=Under%20this%20system%2C%20each%20learner's,%2C%20tertiary%2C%20and%20university%20education." class="text-blue-600 visited:text-purple-600"><abbr title="Competency Based Curriculum">C.B.C.</abbr></a></p>
             </article>
         </section>
 
-        <hr> 
+        <br><br>
 
-        <section class="min-h-screen p-6 flex flex-row flex-wrap-nowrap justify-between">
-            <article class="flex flex-col justify-around">
+        <section class="grid grid-flow-col grid-cols-2 gap-6 px-7 border-2 border-solid border-black bg-slate-100 rounded-3xl p-6 m-3 drop-shadow-lg">
+            <article>
                 <h2>I <strong>love</strong> playing musical Instruments</h2>
                 <p>My favorite musical instruments are the:</p>
                 <dl>
                     <dt>Piano</dt>
                     <dd>
-                        <img src="./img/piano.jpeg" alt="A piano" title="A piano" width="360" height="240" loading="lazy">
+                        <img src="./img/piano.jpeg" alt="A piano" title="A piano" width=400 loading="lazy" class="border rounded-3xl drop-shadow-lg">
                     </dd>
                     <dt>Bass guitar</dt>
                     <dd>
-                        <img src="./img/bass-guitar.jpg" alt="A Bass guitar" title="A Bass Guitar" width="360" height="240" loading="lazy">
+                        <img src="./img/bass-guitar.jpg" alt="A Bass guitar" title="A Bass Guitar" width=240 loading="lazy" class="border rounded-3xl drop-shadow-lg">
                     </dd>
                 </dl>
             </article>
 
-            <article class="mt-16 mr-10">
+            <article>
                 <h2>Sports</h2>
                 <p>My favorite sport are:</p>
                 <dl>
@@ -100,13 +88,13 @@
                         Swimming
                     </dt>
                     <dd>
-                        <img src="./img/rename.jpeg" alt="A person swimming" title="A person swimming" width="360" height="240" loading="lazy">
+                        <img src="./img/rename.jpeg" alt="A person swimming" title="A person swimming" width=400 loading="lazy" class="border rounded-3xl drop-shadow-lg">
                     </dd>
                     <dt>
                         Bike riding
                     </dt>
                     <dd>
-                        <img src="./img/bicycle.jpg" alt="A person riding a bike" title="A person riding a bike" width="360" height="240" loading="lazy">
+                        <img src="./img/bicycle.jpg" alt="A person riding a bike" title="A person riding a bike" width=240 loading="lazy" class="border rounded-3xl drop-shadow-lg">
                     </dd>
                 </dl>
 
@@ -114,45 +102,50 @@
 
         </section>
 
-        <hr>
+   
 
-        <section id="talk_to_me" class="min-h-screen">
+        <section id="talk_to_me" class="bg-emerald-300 border border-black rounded-3xl m-6">
             <p>
-                <strong>Talk to me😁😁😁</strong>
+                <strong class="text-zinc-800 font-serif text-8xl block p-7">Talk to me😁😁😁</strong>
             </p>
             <form>
-                <fieldset>
+                <fieldset class="px-7 border-2 border-solid border-black bg-slate-100 rounded-3xl p-6 m-3 drop-shadow-lg grid grid-cols-2 text-xl font-serif">
 
+                   <div>
                     <p>
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" placeholder="E.g John Doe" required>
                     </p>
-
+                    <br><br>
                     <p>
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="E.g johndoe123@gmail.com">
+                        <input type="email" id="email" name="email" placeholder="E.g johndoe123@gmail.com" required>
                     </p>
+                   </div>
 
-                    <p>
-                        <label for="message">Your Message:</label>
-                    </p>
+                    <div>
+                        <p>
+                            <label for="message">Your Message:</label>
+                        </p>
+    
+                        <p>
+                            <textarea name="message" id="message" placeholder="Type your message here" cols="50" rows="10" required></textarea>
+                        </p>
+                        <button type="submit" class="text-zinc-800 text-2xl bg-emerald-500 border border-black rounded-2xl p-2 px-4">Submit</button>
+                    </div>
 
-                    <p>
-                        <textarea name="message" id="message" placeholder="Type your message here" cols="30" rows="10"></textarea>
-                    </p>
-
-                    <button type="submit">Submit</button>
+                    
                 </fieldset>
             </form>
+            <br><br>
         </section>
     </main>
     
-    <br><br>
 
-    <footer id="contact" class="bg-emerald-500 text-white p-2 pt-7">
+    <footer id="contact" class="bg-emerald-500 text-white p-2 pt-7 rounded-t-3xl">
         <section class="flex flex-row nowrap justify-around p-0">
             <p class="bg-white w-40 h-40 border-4 font-serif text-4xl text-emerald-500 rounded-full grid place-content-center py-0">
-                Contact
+                Contacts
             </p>
             
             <article>
