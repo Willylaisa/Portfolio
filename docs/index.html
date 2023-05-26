@@ -14,7 +14,7 @@
         <nav>
             <ul class="flex flex-row space-x-8">
                 <li>
-                    <a href="./#">Home</a>
+                    <a href="#">Home</a>
                 </li>
                 <li>
                     <a href="./about.html">About Me</a>
@@ -31,19 +31,26 @@
     </header>
 
     <main>
-        <section class="min-h-screen px-6 flex flex-grow-1 flex-row flex-nowrap justify-center">
+        <section class="min-h-screen px-6 grid grid-flow-row grid-cols-2 " style="background-image: url('./img/eagle-header.jpg'); background-repeat: no-repeat; background-size: 100% 100%; z-index:-1;">
             <article class="grid place-content-center">
-                <img src="./img/Mediumshot.png" alt="Willy Laisa" title="Willy Laisa" width="862" height="899" class="w-2/4 h-auto">
+                <img src="./img/Mediumshot.png" alt="Willy Laisa" title="Willy Laisa" width=450vw class="border border-none rounded-3xl">
             </article>
 
-            <article>
-                <p>Hello I'm</p>
-                <h2>Willy Laisa</h2>
-                <p>A Full Stack Web Developer</p>
-                <p>
-                    <a href="#contact">Contact</a>
-                </p>
-                <p><a href="./about.html">Learn more about me</a></p>
+            <article class="flex flex-col justify-center">
+                <div>
+                    <p class="text-4xl font-normal font-serif text-white">Hello, I am</p>
+                    <h2 class="text-8xl font-extrabold text-white pb-3"><strong>Willy Laisa</strong>,</h2>
+                    <p class="text-5xl font-serif text-white">a Full Stack Web Developer</p>
+                </div>
+                <br><br><br>
+                <div class="flex flex-row flex-nowrap space-x-4">
+                    <p class="border-2 border-solid border-emerald-500 bg-emerald-700 text-2xl font-bold text-white px-3 pb-1 rounded-2xl">
+                        <a href="#contact">Contact me</a>
+                    </p>
+                    <p class="text-2xl font-bold font-serif text-white">
+                        <a href="./about.html">Learn more about me</a>
+                    </p>
+                </div>
             </article>
         </section>
 
@@ -143,10 +150,7 @@
             <p class="bg-white w-40 h-40 border-4 font-serif text-4xl text-emerald-500 rounded-full grid place-content-center py-0">
                 Contact
             </p>
-            <address>
-                <p>127 Maasai Way</p>
-                <p>San Ysidro, Kajiado(34), 92173</p>
-            </address>
+            
             <article>
                 <p>
                     Phone: <a href="tel:+254122333444">+254122333444</a>
@@ -155,6 +159,10 @@
                     Email: <a href="mailto:willy@laisa.com">willy@laisa.com</a>
                 </p>
             </article>
+            <address>
+                <p>127 Maasai Way</p>
+                <p>San Ysidro, Kajiado(34), 92173</p>
+            </address>
         </section>
         
         <p class="mt-2 flex flex-row justify-center"><a href="#">Back to top</a></p>
